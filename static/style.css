@@ -1,0 +1,5 @@
+body{background:#050b16;color:#00ffff;font-family:consolas}
+.card{border:1px solid #0ff;padding:12px;margin:10px;border-radius:10px}
+input,button{padding:6px;margin:5px;background:#000;color:#0ff;border:1px solid #0ff}
+.center{display:flex;align-items:center;justify-content:center;height:100vh}
+a{color:#0ff;margin:5px}
