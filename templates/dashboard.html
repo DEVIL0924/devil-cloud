@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<h2>DEVIL CLOUD PANEL</h2>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+<input type="file" name="bot" required>
+<button>UPLOAD BOT</button>
+</form>
+
+{% for b in bots %}
+<div class="card">
+<b>{{b}}</b> | {{bots[b]["status"]}}
+<a href="/start/{{b}}">▶ Start</a>
+<a href="/stop/{{b}}">■ Stop</a>
+<a href="/logs/{{b}}">Logs</a>
+</div>
+{% endfor %}
+</body>
+</html>
